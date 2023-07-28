@@ -1,0 +1,19 @@
+#geth{
+    text-align: center;
+    font-size: 35px;
+    color:rgb(235, 165, 60);
+    font-weight: bold;
+}
+#getbox{
+    width: 100%;
+    margin: auto;
+    margin-top:30px;
+    max-width: 900px;
+    min-height: 1700px;
+    position: relative;
+    /* border:2px solid black; */
+    border-radius:5px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    background-color: rgb(255, 255, 255);
+}

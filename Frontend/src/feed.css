@@ -1,0 +1,199 @@
+/* CSS for Feedback Form */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* h2 {
+    margin-bottom: 20px;
+  } */
+  
+  .form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 6px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Star Rating Styles */
+  .rating-container {
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+    color: #ffd700; /* gold color for filled stars */
+  }
+  
+  .star:hover {
+    color: #ffc107; /* yellow color on hover */
+  }
+  
+  input[type="radio"] {
+    display: none; /* hide radio inputs */
+  }
+  
+  input[type="radio"]:checked + .star {
+    color: #ffc107; /* yellow color for selected stars */
+  }
+
+
+
+#fh{
+    text-align:center;
+    color:#2f234f;
+}
+
+
+
+
+
+
+
+
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfcfc;
+}
+#fecurrent{
+  text-decoration:underline;
+}
+
+.fecontainer {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.fenavbar {
+  height: 60px;
+  background-color: #fef7e5;
+  position: relative;
+}
+
+
+.femenu-icon {
+  display: none;
+}
+
+
+
+.fenav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.fenav-elements ul li:not(:last-child) {
+  margin-right: 55px;
+}
+
+.fenav-elements ul a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration: none;
+}
+
+.fenav-elements ul a.feactive {
+  color: #574c4c;
+  font-weight: 500;
+  position: relative;
+}
+
+.fenav-elements ul a.feactive::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+}
+
+@media (max-width: 768px) {
+  .fenav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .femenu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .fenav-elements {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: #fef7e5;
+    width: 0px;
+    /* height: calc(100vh - 60px); */
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+  }
+
+  .fenav-elements.feactive {
+    width: 270px;
+  }
+
+  .fenav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fenav-elements ul li {
+    margin-right: unset;
+    margin-top: 22px;
+  }
+}

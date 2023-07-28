@@ -1,0 +1,33 @@
+.mar{
+    background-image: url('https://www.blinkco.io/wp-content/uploads/2022/01/shopping-cart-full-of-food-on-yellow-background-g-2021-09-02-09-26-59-utc-1.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.ir{
+    /* height:20px;
+    width:10px; */
+}
+#addbox{
+   max-width: 500px;
+    margin:auto;
+    padding-top:10px;
+    padding: 20px;
+    /* margin-right:150px; */
+    /* float:right; */
+    /* margin-top:100px; */
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 255, 221, 0.796);
+}
+#addlabel{
+    color:rgb(0, 0, 0);
+}
+.bon{
+        background:#4CAF50;
+        width:40%;
+        height:30px;
+        border:none;
+        color:white;
+        margin-left:120px;
+        float:center;
+}
